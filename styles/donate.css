@@ -7,24 +7,19 @@
 /* header styles */
 
 header {
-    background-image: url('/images/donation13.jpg');
-    background-color: linear-gradient(360deg, #121212 0%, rgba(18, 18, 18, 0) 100%);
+    background-image: linear-gradient(360deg, #121212 0%, rgba(18, 18, 18, 0) 100%), url('/images/donation13.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-blend-mode: multiply;
     min-height: 80vh;
-    position: relative;
 }
 
 /* banner styles */
 
 .banner {
     position: absolute;
-    left: 50%;
-    top: 50%;
     text-align: center;
-    transform: translate(-50%, -50%);
+    padding: 100px 300px;
 
 }
 
@@ -32,7 +27,7 @@ header {
     font-weight: 700;
     font-size: 65px;
     color: #FFFFFF;
-    padding: 20px;
+    margin-bottom: 20px;
 
 }
 
@@ -41,7 +36,7 @@ header {
     font-weight: 400;
     font-size: 18px;
     color: #FFFFFF;
-    padding: 30px;
+    margin-bottom: 30px;
 }
 
 
@@ -53,6 +48,7 @@ header {
     font-weight: 600;
     font-size: 20px;
     border: none;
+    /* margin-bottom: 150px; */
 }
 
 /* donate section styles */
@@ -62,7 +58,7 @@ header {
 }
 
 .section-title {
-    margin-top: 130px;
+    margin-top: 110px;
     font-weight: 700;
     font-size: 45px;
     text-align: center;
@@ -73,7 +69,7 @@ header {
     margin: auto;
     margin-top: 20px;
     margin-bottom: 50px;
-    color: #b3b3b3;
+    color: #443632;
     text-align: center;
 }
 
@@ -92,13 +88,15 @@ header {
     width: 135px;
     color: #707070;
     padding: 44px 25px;
-    margin: auto;
+    /* margin: auto; */
+    border: 2px solid #ff5959;
+    border-radius: 5px;
+
 }
 
 .amount h3:hover {
-    background: #ffeeee;
-    border: 2px solid #ff5959;
-    border-radius: 5px;
+    background: #f8abab;
+
 }
 
 .other-amount {
@@ -113,16 +111,29 @@ header {
     display: block;
     margin: auto;
     width: 55%;
+    /* width: 765px; */
     border: 1px solid #dadada;
     margin-bottom: 30px;
 }
 
 /* donate plan styles */
 
+
+/* .donate-section-title{
+    margin-top: 130px;
+} */
+
+.donate-plan {
+    /* margin-top: 220px; */
+}
+
 .boxes {
     display: flex;
     justify-content: center;
-    
+
+    gap: 25px;
+    margin: 0 160px;
+
 }
 
 .box img {
@@ -138,10 +149,37 @@ header {
 
 .box p {
     width: 315px;
-    color: #707070;
+    color: #171717;
 }
 
-.box{
-    padding: 54px 23px;
-    margin-left: 24px;
+.box {
+    padding: 80px 25px 60px;
+    /* margin-left: 20px; */
+}
+
+/* how to contribute section */
+
+.contribute-section img {
+    width: 456px;
+    height: 477px;
+}
+
+.contribute-section {
+    display: flex;
+    gap: 80px;
+    margin: 160px;
+    justify-content: center;
+}
+
+.contribute-section h3 {
+    font-weight: 700;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.contribute-section p {
+    font-weight: 400;
+    font-size: 18px;
+    color: #707070;
+    margin-bottom: 30px;
 }
